@@ -1,112 +1,164 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fulvio Maia | Audiovisual & Educação</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Fulvio Maia | Audiovisual, TV e Educação</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0f172a;
-      --card: #020617;
-      --text: #e5e7eb;
-      --muted: #94a3b8;
-      --accent: #38bdf8;
+      --bg: #0e0e0e;
+      --card: #1a1a1a;
+      --text: #f5f5f5;
+      --muted: #bdbdbd;
+      --accent: #c9a24d;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    * { box-sizing: border-box; }
+
     body {
+      margin: 0;
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(180deg, #020617, #0f172a);
+      background: var(--bg);
       color: var(--text);
       line-height: 1.6;
     }
-    a { text-decoration: none; }
+
     header {
-      padding: 4rem 2rem;
+      padding: 80px 20px;
       text-align: center;
     }
+
     header h1 {
+      font-family: 'Playfair Display', serif;
       font-size: 3rem;
-      font-weight: 700;
+      margin-bottom: 10px;
     }
+
     header p {
+      max-width: 700px;
+      margin: auto;
       color: var(--muted);
-      max-width: 600px;
-      margin: 1rem auto 0;
       font-size: 1.1rem;
     }
+
     section {
-      padding: 3rem 2rem;
+      padding: 80px 20px;
       max-width: 1100px;
       margin: auto;
     }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
+      gap: 24px;
     }
-    .card-link { display: block; }
+
+    a.card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
     .card {
-      background: rgba(255,255,255,0.03);
-      border-radius: 16px;
-      padding: 1.5rem;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-      transition: transform .3s ease, box-shadow .3s ease;
+      background: var(--card);
+      padding: 30px;
+      border-radius: 18px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       height: 100%;
     }
+
     .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     }
+
     .card h3 {
-      margin-bottom: .5rem;
-      color: var(--text);
+      font-family: 'Playfair Display', serif;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
     }
+
     .card p {
       color: var(--muted);
-      font-size: .95rem;
+      font-size: 0.95rem;
     }
-    footer {
-      text-align: center;
-      padding: 3rem 1rem;
+
+    .detail h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .detail p {
+      max-width: 800px;
       color: var(--muted);
-      font-size: .9rem;
+      font-size: 1.05rem;
     }
-    @media (max-width: 600px) {
-      header h1 { font-size: 2.2rem; }
+
+    footer {
+      padding: 60px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: var(--accent);
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Fulvio Maia</h1>
-    <p>Audiovisual, educação e projetos criativos que usam imagem, som e narrativa para transformar conhecimento.</p>
-  </header>
+<header>
+  <h1>Fulvio Maia</h1>
+  <p>Direção, criação e estratégia audiovisual para marcas, educação, televisão e projetos autorais.</p>
+</header>
 
-  <section>
-    <div class="grid">
-      <a href="#" class="card-link"><div class="card">$1</div></a>
-      <a href="#" class="card-link"><div class="card">$1</div></a>
-      <a href="#" class="card-link"><div class="card">$1</div></a>
-      <a href="#" class="card-link"><div class="card">$1</div></a>
-      <a href="#" class="card-link"><div class="card">$1</div></a>
-      <a href="#" class="card-link"><div class="card">$1</div></a>
-    </div>
-  </section>
+<section>
+  <div class="grid">
+    <a href="#branding" class="card-link"><div class="card"><h3>Publicidade e Branding</h3><p>Criação de campanhas, filmes publicitários e posicionamento de marca através do audiovisual.</p></div></a>
+    <a href="#tv" class="card-link"><div class="card"><h3>Direção de TV</h3><p>Direção de programas, formatos, conteúdo ao vivo e gravado para televisão e streaming.</p></div></a>
+    <a href="#docs" class="card-link"><div class="card"><h3>Documentários</h3><p>Narrativas reais com abordagem cinematográfica, impacto social e profundidade humana.</p></div></a>
+    <a href="#edu" class="card-link"><div class="card"><h3>Audiovisual Educacional</h3><p>Conteúdos educacionais escaláveis que unem pedagogia, tecnologia e storytelling.</p></div></a>
+    <a href="#inst" class="card-link"><div class="card"><h3>Institucional</h3><p>Vídeos institucionais, cultura organizacional e comunicação corporativa estratégica.</p></div></a>
+    <a href="#cons" class="card-link"><div class="card"><h3>Consultoria e Treinamento</h3><p>Formação de equipes, estruturação de estúdios e processos audiovisuais.</p></div></a>
+  </div>
+</section>
 
-  
+<section id="branding" class="detail">
+  <h2>Publicidade e Branding</h2>
+  <p>Desenvolvimento de campanhas audiovisuais completas, do conceito à finalização. O foco é criar peças que reforcem identidade, desejo e conexão emocional com o público.</p>
+</section>
 
-  <section>
-    <h2>Contato</h2>
-    <p>📩 <a href="mailto:contato@fulviomaia.com">contato@fulviomaia.com</a></p>
-    <p>🔗 <a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
-  </section>
+<section id="tv" class="detail">
+  <h2>Direção de TV</h2>
+  <p>Experiência em direção de programas, talk shows, jornalismo, entretenimento e formatos híbridos para TV aberta, fechada e plataformas digitais.</p>
+</section>
 
-  <footer>
-    © 2025 Fulvio Maia • Hospedado no GitHub Pages
-  </footer>
+<section id="docs" class="detail">
+  <h2>Documentários</h2>
+  <p>Criação e direção de documentários autorais e institucionais, com forte linguagem cinematográfica e compromisso com a verdade narrativa.</p>
+</section>
+
+<section id="edu" class="detail">
+  <h2>Audiovisual Educacional</h2>
+  <p>Produção de conteúdo educacional em larga escala, EAD, videoaulas, cursos e projetos que utilizam o audiovisual como ferramenta de transformação social.</p>
+</section>
+
+<section id="inst" class="detail">
+  <h2>Institucional</h2>
+  <p>Comunicação institucional focada em propósito, impacto e clareza. Ideal para empresas, fundações e projetos de grande escala.</p>
+</section>
+
+<section id="cons" class="detail">
+  <h2>Consultoria e Treinamento</h2>
+  <p>Consultoria estratégica para projetos audiovisuais, treinamento de equipes, desenho de fluxos de produção e implementação de estúdios.</p>
+</section>
+
+<footer>
+  <p>© 2025 <span>Fulvio Maia</span> · Audiovisual que educa, comunica e transforma.</p>
+</footer>
 
 </body>
 </html>
