@@ -1,58 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fulvio Maia | Vitrine Completa</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0e0e0e;
-      --card: #1a1a1a;
-      --text: #f5f5f5;
-      --muted: #bdbdbd;
-      --accent: #c9a24d;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
-    a { text-decoration: none; color: inherit; }
-    header { padding: 80px 20px; text-align: center; }
-    header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 10px; }
-    header p { max-width: 700px; margin: auto; color: var(--muted); font-size: 1.1rem; }
-    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
-    a.card-link { display: block; }
-    .card { background: var(--card); padding: 30px; border-radius: 18px; transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; }
-    .card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
-    .card h3 { font-family: 'Playfair Display', serif; margin-top: 0; margin-bottom: 10px; font-size: 1.4rem; }
-    .card p { color: var(--muted); font-size: 0.95rem; }
-    .detail h2 { font-family: 'Playfair Display', serif; font-size: 2.2rem; margin-bottom: 20px; }
-    .detail p { max-width: 800px; color: var(--muted); font-size: 1.05rem; }
-    footer { padding: 60px 20px; text-align: center; color: var(--muted); font-size: 0.9rem; }
-    footer span { color: var(--accent); }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fulvio Maia | Vitrine One-Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0e0e0e;
+  --card: #1a1a1a;
+  --text: #f5f5f5;
+  --muted: #bdbdbd;
+  --accent: #c9a24d;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; scroll-behavior: smooth; }
+a { text-decoration: none; color: inherit; }
+header { padding: 80px 20px; text-align: center; }
+header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 10px; }
+header p { max-width: 700px; margin: auto; color: var(--muted); font-size: 1.1rem; }
+section { padding: 80px 20px; max-width: 1100px; margin: auto; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+.card-link { display: block; }
+.card { background: var(--card); padding: 30px; border-radius: 18px; transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; }
+.card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+.card h3 { font-family: 'Playfair Display', serif; margin-top: 0; margin-bottom: 10px; font-size: 1.4rem; }
+.card p { color: var(--muted); font-size: 0.95rem; }
+.detail h2 { font-family: 'Playfair Display', serif; font-size: 2.2rem; margin-bottom: 20px; }
+.detail p { max-width: 800px; color: var(--muted); font-size: 1.05rem; }
+footer { padding: 60px 20px; text-align: center; color: var(--muted); font-size: 0.9rem; }
+footer span { color: var(--accent); }
+</style>
 </head>
 <body>
-
 <header>
-  <h1>Fulvio Maia</h1>
-  <p>Direção, criação e estratégia audiovisual para marcas, educação, televisão e projetos autorais.</p>
+<h1>Fulvio Maia</h1>
+<p>Direção, criação e estratégia audiovisual para marcas, educação, televisão e projetos autorais.</p>
 </header>
-
 <section>
-  <div class="grid">
-    <a href="branding.html" class="card-link"><div class="card"><h3>Publicidade e Branding</h3><p>Criação de campanhas, filmes publicitários e posicionamento de marca através do audiovisual.</p></div></a>
-    <a href="tv.html" class="card-link"><div class="card"><h3>Direção de TV</h3><p>Direção de programas, formatos, conteúdo ao vivo e gravado para televisão e streaming.</p></div></a>
-    <a href="documentarios.html" class="card-link"><div class="card"><h3>Documentários</h3><p>Narrativas reais com abordagem cinematográfica, impacto social e profundidade humana.</p></div></a>
-    <a href="educacional.html" class="card-link"><div class="card"><h3>Audiovisual Educacional</h3><p>Conteúdos educacionais escaláveis que unem pedagogia, tecnologia e storytelling.</p></div></a>
-    <a href="institucional.html" class="card-link"><div class="card"><h3>Institucional</h3><p>Vídeos institucionais, cultura organizacional e comunicação corporativa estratégica.</p></div></a>
-    <a href="consultoria.html" class="card-link"><div class="card"><h3>Consultoria e Treinamento</h3><p>Formação de equipes, estruturação de estúdios e processos audiovisuais.</p></div></a>
-  </div>
+<div class="grid">
+<a href="#branding" class="card-link"><div class="card"><h3>Publicidade e Branding</h3><p>Criação de campanhas, filmes publicitários e posicionamento de marca através do audiovisual.</p></div></a>
+<a href="#tv" class="card-link"><div class="card"><h3>Direção de TV</h3><p>Direção de programas, formatos, conteúdo ao vivo e gravado para televisão e streaming.</p></div></a>
+<a href="#documentarios" class="card-link"><div class="card"><h3>Documentários</h3><p>Narrativas reais com abordagem cinematográfica, impacto social e profundidade humana.</p></div></a>
+<a href="#educacional" class="card-link"><div class="card"><h3>Audiovisual Educacional</h3><p>Conteúdos educacionais escaláveis que unem pedagogia, tecnologia e storytelling.</p></div></a>
+<a href="#institucional" class="card-link"><div class="card"><h3>Institucional</h3><p>Vídeos institucionais, cultura organizacional e comunicação corporativa estratégica.</p></div></a>
+<a href="#consultoria" class="card-link"><div class="card"><h3>Consultoria e Treinamento</h3><p>Formação de equipes, estruturação de estúdios e processos audiovisuais.</p></div></a>
+</div>
+</section>
+
+<section id="branding" class="detail">
+<h2>Publicidade e Branding</h2>
+<p>Desenvolvimento de campanhas audiovisuais completas, do conceito à finalização. O foco é criar peças que reforcem identidade, desejo e conexão emocional com o público.</p>
+</section>
+
+<section id="tv" class="detail">
+<h2>Direção de TV</h2>
+<p>Experiência em direção de programas, talk shows, jornalismo, entretenimento e formatos híbridos para TV aberta, fechada e plataformas digitais.</p>
+</section>
+
+<section id="documentarios" class="detail">
+<h2>Documentários</h2>
+<p>Criação e direção de documentários autorais e institucionais, com forte linguagem cinematográfica e compromisso com a verdade narrativa.</p>
+</section>
+
+<section id="educacional" class="detail">
+<h2>Audiovisual Educacional</h2>
+<p>Produção de conteúdo educacional em larga escala, EAD, videoaulas, cursos e projetos que utilizam o audiovisual como ferramenta de transformação social.</p>
+</section>
+
+<section id="institucional" class="detail">
+<h2>Institucional</h2>
+<p>Comunicação institucional focada em propósito, impacto e clareza. Ideal para empresas, fundações e projetos de grande escala.</p>
+</section>
+
+<section id="consultoria" class="detail">
+<h2>Consultoria e Treinamento</h2>
+<p>Consultoria estratégica para projetos audiovisuais, treinamento de equipes, desenho de fluxos de produção e implementação de estúdios.</p>
 </section>
 
 <footer>
-  <p>© 2025 <span>Fulvio Maia</span> · Audiovisual que educa, comunica e transforma.</p>
+<p>© 2025 <span>Fulvio Maia</span> · Audiovisual que educa, comunica e transforma.</p>
 </footer>
-
 </body>
 </html>
